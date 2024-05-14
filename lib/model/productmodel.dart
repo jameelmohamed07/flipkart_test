@@ -5,6 +5,7 @@ class Product {
   final double price;
   final String category;
   final String image;
+  bool isPinned;
 
   Product({
     required this.id,
@@ -13,6 +14,7 @@ class Product {
     required this.price,
     required this.category,
     required this.image,
+    this.isPinned = false,
   });
 
   factory Product.fromJson(Map<String, dynamic> json) {
